@@ -1,0 +1,89 @@
+{
+  "model": "StandardScaler + SMOTE + LogisticRegression",
+  "n_features": 23,
+  "features": [
+    "LIMIT_BAL",
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE",
+    "AGE",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6"
+  ],
+  "thresholds": {
+    "auto_low": 0.165,
+    "auto_high": 0.465,
+    "center": 0.315,
+    "raw_center": 0.58,
+    "grey_margin": 0.15
+  },
+  "metrics": {
+    "test_auc": 0.7103,
+    "brier_raw": 0.2085,
+    "brier_calibrated": 0.1473,
+    "mean_pred_raw": 0.4522,
+    "mean_pred_calibrated": 0.2215,
+    "base_rate": 0.2212
+  },
+  "trained_at": "2026-11-19 21:47:39",
+  "top_risk_factors": [
+    [
+      "PAY_0",
+      0.6007768117711563
+    ],
+    [
+      "BILL_AMT2",
+      0.23681197181110006
+    ],
+    [
+      "PAY_2",
+      0.09483535323269335
+    ],
+    [
+      "BILL_AMT5",
+      0.09272481186112201
+    ],
+    [
+      "PAY_3",
+      0.08605477806948081
+    ]
+  ],
+  "top_protective_factors": [
+    [
+      "BILL_AMT1",
+      -0.48096334623643516
+    ],
+    [
+      "PAY_AMT1",
+      -0.2792447211593906
+    ],
+    [
+      "PAY_AMT2",
+      -0.19299394259231026
+    ],
+    [
+      "LIMIT_BAL",
+      -0.1768524116209019
+    ],
+    [
+      "EDUCATION",
+      -0.13215832575753958
+    ]
+  ]
+}

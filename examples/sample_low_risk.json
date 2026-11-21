@@ -1,0 +1,28 @@
+{
+  "request_id": "DEMO-LOW",
+  "applicant": {
+    "LIMIT_BAL": 500000,
+    "SEX": 2,
+    "EDUCATION": 2,
+    "MARRIAGE": 1,
+    "AGE": 27,
+    "PAY_0": -2,
+    "PAY_2": -2,
+    "PAY_3": -2,
+    "PAY_4": -2,
+    "PAY_5": -2,
+    "PAY_6": -2,
+    "BILL_AMT1": 11354,
+    "BILL_AMT2": 9983,
+    "BILL_AMT3": 13570,
+    "BILL_AMT4": 10000,
+    "BILL_AMT5": 10000,
+    "BILL_AMT6": 10000,
+    "PAY_AMT1": 9983,
+    "PAY_AMT2": 13587,
+    "PAY_AMT3": 10000,
+    "PAY_AMT4": 10000,
+    "PAY_AMT5": 10000,
+    "PAY_AMT6": 25304
+  }
+}

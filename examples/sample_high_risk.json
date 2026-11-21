@@ -1,0 +1,28 @@
+{
+  "request_id": "DEMO-HIGH",
+  "applicant": {
+    "LIMIT_BAL": 20000,
+    "SEX": 2,
+    "EDUCATION": 2,
+    "MARRIAGE": 1,
+    "AGE": 24,
+    "PAY_0": 4,
+    "PAY_2": 3,
+    "PAY_3": 2,
+    "PAY_4": 2,
+    "PAY_5": 2,
+    "PAY_6": 2,
+    "BILL_AMT1": 16549,
+    "BILL_AMT2": 16002,
+    "BILL_AMT3": 16047,
+    "BILL_AMT4": 15492,
+    "BILL_AMT5": 16739,
+    "BILL_AMT6": 16320,
+    "PAY_AMT1": 0,
+    "PAY_AMT2": 600,
+    "PAY_AMT3": 0,
+    "PAY_AMT4": 1500,
+    "PAY_AMT5": 0,
+    "PAY_AMT6": 2000
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "records": [
+    {
+      "request_id": "BATCH-001",
+      "applicant": {
+        "LIMIT_BAL": 500000,
+        "SEX": 2,
+        "EDUCATION": 2,
+        "MARRIAGE": 1,
+        "AGE": 27,
+        "PAY_0": -2,
+        "PAY_2": -2,
+        "PAY_3": -2,
+        "PAY_4": -2,
+        "PAY_5": -2,
+        "PAY_6": -2,
+        "BILL_AMT1": 11354,
+        "BILL_AMT2": 9983,
+        "BILL_AMT3": 13570,
+        "BILL_AMT4": 10000,
+        "BILL_AMT5": 10000,
+        "BILL_AMT6": 10000,
+        "PAY_AMT1": 9983,
+        "PAY_AMT2": 13587,
+        "PAY_AMT3": 10000,
+        "PAY_AMT4": 10000,
+        "PAY_AMT5": 10000,
+        "PAY_AMT6": 25304
+      }
+    },
+    {
+      "request_id": "BATCH-002",
+      "applicant": {
+        "LIMIT_BAL": 90000,
+        "SEX": 2,
+        "EDUCATION": 1,
+        "MARRIAGE": 1,
+        "AGE": 31,
+        "PAY_0": 1,
+        "PAY_2": 2,
+        "PAY_3": -1,
+        "PAY_4": 0,
+        "PAY_5": 0,
+        "PAY_6": -1,
+        "BILL_AMT1": 8318,
+        "BILL_AMT2": 6111,
+        "BILL_AMT3": 33212,
+        "BILL_AMT4": 8978,
+        "BILL_AMT5": 1782,
+        "BILL_AMT6": 23173,
+        "PAY_AMT1": 39,
+        "PAY_AMT2": 33500,
+        "PAY_AMT3": 0,
+        "PAY_AMT4": 0,
+        "PAY_AMT5": 25000,
+        "PAY_AMT6": 0
+      }
+    },
+    {
+      "request_id": "BATCH-003",
+      "applicant": {
+        "LIMIT_BAL": 20000,
+        "SEX": 2,
+        "EDUCATION": 2,
+        "MARRIAGE": 1,
+        "AGE": 24,
+        "PAY_0": 4,
+        "PAY_2": 3,
+        "PAY_3": 2,
+        "PAY_4": 2,
+        "PAY_5": 2,
+        "PAY_6": 2,
+        "BILL_AMT1": 16549,
+        "BILL_AMT2": 16002,
+        "BILL_AMT3": 16047,
+        "BILL_AMT4": 15492,
+        "BILL_AMT5": 16739,
+        "BILL_AMT6": 16320,
+        "PAY_AMT1": 0,
+        "PAY_AMT2": 600,
+        "PAY_AMT3": 0,
+        "PAY_AMT4": 1500,
+        "PAY_AMT5": 0,
+        "PAY_AMT6": 2000
+      }
+    }
+  ]
+}

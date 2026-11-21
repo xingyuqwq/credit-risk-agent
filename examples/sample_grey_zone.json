@@ -1,0 +1,28 @@
+{
+  "request_id": "DEMO-GREY",
+  "applicant": {
+    "LIMIT_BAL": 90000,
+    "SEX": 2,
+    "EDUCATION": 1,
+    "MARRIAGE": 1,
+    "AGE": 31,
+    "PAY_0": 1,
+    "PAY_2": 2,
+    "PAY_3": -1,
+    "PAY_4": 0,
+    "PAY_5": 0,
+    "PAY_6": -1,
+    "BILL_AMT1": 8318,
+    "BILL_AMT2": 6111,
+    "BILL_AMT3": 33212,
+    "BILL_AMT4": 8978,
+    "BILL_AMT5": 1782,
+    "BILL_AMT6": 23173,
+    "PAY_AMT1": 39,
+    "PAY_AMT2": 33500,
+    "PAY_AMT3": 0,
+    "PAY_AMT4": 0,
+    "PAY_AMT5": 25000,
+    "PAY_AMT6": 0
+  }
+}

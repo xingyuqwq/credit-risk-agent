@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "description": "信用风险审查 Agent 的规则知识库。规则只用于生成可读的风险提示与复核建议，不参与最终概率计算。",
+  "source": "依据 UCI Default of Credit Card Clients 数据字典（Yeh & Lien, 2009）中字段的业务含义人工整理",
+  "rules": [
+    {
+      "id": "R01",
+      "tag": "近期逾期",
+      "level": "risk",
+      "condition": {"field": "PAY_0", "op": ">=", "value": 2},
+      "message": "最近一期还款状态为逾期 2 个月及以上，属于显著的风险信号。"
+    },
+    {
+      "id": "R02",
+      "tag": "连续逾期",
+      "level": "risk",
+      "condition": {"all": [
+        {"field": "PAY_0", "op": ">=", "value": 1},
+        {"field": "PAY_2", "op": ">=", "value": 1}
+      ]},
+      "message": "最近两期均出现逾期，还款意愿或现金流可能已出现问题。"
+    },
+    {
+      "id": "R03",
+      "tag": "历史最长逾期",
+      "level": "risk",
+      "condition": {"field": "max_delay", "op": ">=", "value": 3},
+      "message": "近半年最长逾期达到 3 个月及以上，建议重点核查。"
+    },
+    {
+      "id": "R04",
+      "tag": "额度使用率过高",
+      "level": "risk",
+      "condition": {"field": "utilization", "op": ">=", "value": 0.9},
+      "message": "本期账单金额已接近授信额度上限，风险缓冲空间很小。"
+    },
+    {
+      "id": "R05",
+      "tag": "还款能力不足",
+      "level": "risk",
+      "condition": {"field": "repay_ratio", "op": "<", "value": 0.1},
+      "message": "近半年累计还款额不足累计账单的 10%，偿债能力偏弱。"
+    },
+    {
+      "id": "R06",
+      "tag": "账单快速攀升",
+      "level": "risk",
+      "condition": {"field": "bill_growth", "op": ">=", "value": 0.5},
+      "message": "本期账单较上期增长超过 50%，需关注负债是否在快速累积。"
+    },
+    {
+      "id": "R07",
+      "tag": "额度偏低",
+      "level": "info",
+      "condition": {"field": "LIMIT_BAL", "op": "<", "value": 30000},
+      "message": "授信额度低于 3 万，该区间客户的样本违约率通常偏高。"
+    },
+    {
+      "id": "R08",
+      "tag": "年轻客群",
+      "level": "info",
+      "condition": {"field": "AGE", "op": "<", "value": 25},
+      "message": "客户年龄小于 25 岁，可用的信用历史相对较短。"
+    },
+    {
+      "id": "R09",
+      "tag": "额度使用充分",
+      "level": "protective",
+      "condition": {"field": "utilization", "op": "<", "value": 0.3},
+      "message": "额度使用率低于 30%，负债水平相对可控。"
+    },
+    {
+      "id": "R10",
+      "tag": "近期无逾期",
+      "level": "protective",
+      "condition": {"field": "delay_count", "op": "==", "value": 0},
+      "message": "近半年所有账期均无逾期记录。"
+    },
+    {
+      "id": "R11",
+      "tag": "上期账单已结清",
+      "level": "protective",
+      "condition": {"field": "repay_cover", "op": ">=", "value": 0.9},
+      "message": "上期账单已基本结清，短期偿付表现良好。"
+    }
+  ]
+}

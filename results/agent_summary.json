@@ -1,0 +1,36 @@
+{
+  "n_test": 6000,
+  "latency_mean_ms": 0.196,
+  "latency_p95_ms": 0.22,
+  "throughput_per_sec": 3923.4,
+  "thresholds": {
+    "auto_low": 0.165,
+    "auto_high": 0.465,
+    "center": 0.315,
+    "raw_center": 0.58,
+    "grey_margin": 0.15
+  },
+  "metrics": {
+    "test_auc": 0.7103,
+    "brier_raw": 0.2085,
+    "brier_calibrated": 0.1473,
+    "mean_pred_raw": 0.4522,
+    "mean_pred_calibrated": 0.2215,
+    "base_rate": 0.2212
+  },
+  "full_agent": {
+    "配置": "A. 完整 Agent（SMOTE+校准+灰区）",
+    "AUC": 0.7103,
+    "Accuracy": 0.7997,
+    "Precision": 0.5578,
+    "Recall": 0.4544,
+    "F1": 0.5008,
+    "自动通过率": 0.4048,
+    "转人工率": 0.5952,
+    "高风险标记率": 0.0887,
+    "自动通过中实际违约率": 0.1301,
+    "复核覆盖违约客户比例": 0.7619,
+    "自动放行漏判数": 316
+  },
+  "cases_csv": "results/agent_cases.csv"
+}
